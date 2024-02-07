@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Showing Branch Office</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #563d7c;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: #563d7c;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ddd;
+            background-color: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #563d7c;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+    <h1>Showing Branch Office</h1>
+    <hr />
+    <h2>Branch Office Data:</h2>
+    <h3 th:text="${branchOfficeDTO.name}"></h3>
+    <table border="1">
+        <thead>
+        <tr>
+            <th>Name</th> 
+            <th>ID</th>
+            <th>Country</th>
+            <th>Country Type</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td th:text="${branchOfficeDTO.name}"></td>
+            <td th:text="${branchOfficeDTO.id}"></td>
+            <td th:text="${branchOfficeDTO.country}"></td>
+            <td th:text="${branchOfficeDTO.countryType}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <hr />
+</div>
+</body>
+</html>
