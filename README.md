@@ -1,5 +1,7 @@
 Utilitzar l'script createbranchoffcedb.sql per crear la base de dades, i modificar l' archiu S05T01N01SanchezMorenoMarc/src/main/resources/application.properties amb el nom i contraseña corresponents.
 
+La pagina principal de l'aplicacio es: http://localhost:9000/sucursal/getAll
+
 Enllaços consultats:
 
 - https://spring.io/guides/gs/serving-web-content
