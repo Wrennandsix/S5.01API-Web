@@ -9,7 +9,7 @@ public class BranchOfficeExceptions {
 	
     @ExceptionHandler(EntityNotFoundException.class)
     public String handleNotFoundException(EntityNotFoundException ex, RedirectAttributes redirectAttributes){
-        redirectAttributes.addFlashAttribute("notFoundError", " Branch office not founded!!");
+        redirectAttributes.addFlashAttribute("notFoundError", " Branch office not found!!");
         return "redirect:/sucursal/getAll";
     }
 
