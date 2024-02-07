@@ -1,3 +1,5 @@
+Utilitzar l'script createbranchoffcedb.sql per crear la base de dades i modificar el archiu S05T01N01SanchezMorenoMarc/src/main/resources/application.properties amb el nom i contraseña corresponents.
+
 Enllaços consultats:
 
 - https://spring.io/guides/gs/serving-web-content
